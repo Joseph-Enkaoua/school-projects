@@ -1,6 +1,0 @@
-make: Entering directory `/Users/henkaoua/Desktop/cpp/02/ex01'
-c++ -Wall -Wextra -Werror -std=c++98   -c -o main.o main.cpp
-c++ -Wall -Wextra -Werror -std=c++98   -c -o Fixed.o Fixed.cpp
-c++ main.o Fixed.o -Wall -Wextra -Werror -std=c++98 -o fixed
-make: Leaving directory `/Users/henkaoua/Desktop/cpp/02/ex01'
- 
