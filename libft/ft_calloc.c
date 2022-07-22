@@ -14,11 +14,18 @@
 
 void	*ft_calloc(t_size count, t_size size)
 {
-	void	*vd;
+	char	*vd;
+    int		i;
+	int		len;
 
+	if (count == SIZE_MAX || size == SIZE_MAX)
+		return (NULL);
 	vd = (void *)malloc(count * size);
 	if (!vd)
 		return (0);
-	ft_bzero(vd, count * size);
-	return (vd);
+	i = -1;
+	len = count * size;
+	while (++i < len)
+		vd[i] = 0;
+	return ((void *)vd);
 }
